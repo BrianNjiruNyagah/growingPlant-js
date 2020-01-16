@@ -1,0 +1,13 @@
+function growingPlant(upSpeed, downSpeed, desiredHeight) {  
+    //gets the rate at which the plant shall be growing 
+    let add = upSpeed - downSpeed;
+    let count = 1;
+    let current = upSpeed;
+    //loop adds the height the plant grows per day
+    //till the desired heigth is obtained
+    for(;current < desiredHeight;){
+        current += add;
+        count++;
+    }
+    return count;
+}
